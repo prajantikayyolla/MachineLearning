@@ -81,7 +81,7 @@ if __name__ == '__main__':
     vae = VAE(x_dim=784, h_dim1=512, h_dim2=256, z_dim=2)
     optimizer = optim.Adam(vae.parameters())
 
-    for epoch in range(1, 2):
+    for epoch in range(1, 51):
         train(epoch)
         test()
 

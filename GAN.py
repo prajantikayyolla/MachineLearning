@@ -103,7 +103,7 @@ if __name__ == '__main__':
     G_optimizer = optim.Adam(G.parameters(), lr=lr)
     D_optimizer = optim.Adam(D.parameters(), lr=lr)
 
-    n_epoch = 2
+    n_epoch = 200
     for epoch in range(1, n_epoch + 1):
         D_losses, G_losses = [], []
         for batch_idx, (x, _) in enumerate(train_loader):
